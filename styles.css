@@ -1,0 +1,141 @@
+/* Page style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.icon img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 50px;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333333;
+}
+
+.filters {
+    background-color: lightgrey;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters > div {
+    padding: 10px;
+}
+
+input[type='number']{
+    width: 40px;
+}
+
+.filter {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.results {
+    margin-top: 20px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+
+
+
+/* Card style */
+.card {
+    background-color: #f4f4f4;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    display: flex;
+}
+
+.card > .image-and-name {
+/*     flex-basis: 70%; */
+    flex: 7;
+    /* width: 70%; */
+}
+
+.card > .image-and-name > img {
+    width: 100%;
+}
+
+.PG-name {
+    text-align: center;
+    font-size: 20pt;
+}
+
+.card > .other-details {
+    /* background-color: cyan; */
+    padding: 5px 10px;
+    text-align: right;
+    flex-basis: 30%;
+    flex: 3;
+
+    /* font-size: 12pt; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: flex-end;
+}
+
+.card .owner-details > * {
+    margin: 2px 0px;
+    padding: 0px;
+}
+
+.card .owner-details > h2 {
+    font-size: 14pt;
+}
+
+.card .capacity {
+    margin: 0px;
+    margin-top: 20px;
+}
+
+.card .rent-amount {
+    font-size: 18pt;
+}
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
